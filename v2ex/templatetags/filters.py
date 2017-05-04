@@ -3,8 +3,7 @@ import logging
 from v2ex.babel.ext import bleach
 import sys
 sys.path.append('/Library/Python/2.7/site-packages')
-sys.path.append('', '/usr/local/lib/python2.7/dist-packages/pip-9.0.1-py2.7.egg', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-x86_64-linux-gnu', '/usr/lib/python2.7/lib-tk', 
-'/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/usr/local/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages')
+sys.path.append('', '/usr/local/lib/python2.7/dist-packages/pip-9.0.1-py2.7.egg', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-x86_64-linux-gnu', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/usr/local/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages')
 logging.info(sys.path)
 from django import template
 
