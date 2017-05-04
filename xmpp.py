@@ -24,7 +24,7 @@ from twitter.oauth import OAuthToken
 from config import twitter_consumer_key as CONSUMER_KEY
 from config import twitter_consumer_secret as CONSUMER_SECRET
 
-from django.utils import simplejson as json
+import json
 
 def extract_address(raw):
     if raw.find('/') == -1:

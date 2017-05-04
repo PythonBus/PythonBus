@@ -41,7 +41,7 @@ from v2ex.babel.ext.sessions import Session
 
 from v2ex.babel.handlers import BaseHandler
 
-from django.utils import simplejson as json
+import json
 
 from v2ex.babel.ext import captcha
 
@@ -55,8 +55,8 @@ class HomeHandler(webapp.RequestHandler):
         
     def get(self):
         host = self.request.headers['Host']
-        if host == 'beta.v2ex.com':
-            return self.redirect('http://www.v2ex.com/')
+        if host == 'beta.pythonbus.com':
+            return self.redirect('http://www.pythonbus.com/')
         site = GetSite()
         browser = detect(self.request)
         template_values = {}

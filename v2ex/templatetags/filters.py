@@ -1,13 +1,15 @@
 import re, string
 import logging
 from v2ex.babel.ext import bleach
-
+import sys
+sys.path.append('/Library/Python/2.7/site-packages')
+logging.info(sys.path)
 from django import template
 
 from datetime import timedelta
 import urllib, hashlib
 register = template.Library()
-
+logging.info(register)
 # Configuration for urlize() function
 LEADING_PUNCTUATION  = ['(', '<', '&lt;']
 TRAILING_PUNCTUATION = ['.', ',', ')', '>', '\n', '&gt;']
