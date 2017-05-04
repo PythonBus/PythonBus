@@ -5,6 +5,8 @@ api_version: 1
 
 default_expiration: "10d"
 
+threadsafe: true
+
 derived_file_type:
 - python_precompiled
 
